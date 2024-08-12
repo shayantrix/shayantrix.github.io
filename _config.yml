@@ -8,13 +8,13 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "Shayan Amir Shahkarami / Undergraduate Student at IAU Central Tehran"
+title: "Undergraduate Student at IAU Central Tehran / Researcher & Developer at Fuzzer Cloud"
 title_separator: "-"
 name: &name "Shayan Amir Shahkarami"
-description: &description "Researcher & Developer at Fuzzer Cloud Undergraduate Student at IAU Central Tehran"
-url: https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description: &description "Researcher & Developer at Fuzzer. Cloud Undergraduate Student at IAU Central Tehran"
+url: https://shayantrix.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
-repository: "academicpages/academicpages.github.io"
+repository: "shayantrix/shayantrix.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,9 +22,9 @@ repository: "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar: "images/1679991182142.jpg"
-  name: "Your Sidebar Name"
+  name: "Shayan Amir Shahkarami"
   pronouns: # example: "she/her"
-  bio: "Short biography for the left-hand sidebar"
+  bio: "Undergraduate Student at IAU Central Tehran and Researcher & Developer at Fuzzer Cloud"
   location: "Earth"
   employer: "Red Brick University"
   uri: # URL
