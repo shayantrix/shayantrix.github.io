@@ -83,7 +83,7 @@ publication_category:
   #title: "Conference Papers"
 
 # Site Settings
-teaser: images/photo_2024-08-10_01-28-58 (1).jpg # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser: photo_2024-08-10_01-28-58 (1).jpg # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
 words_per_minute: 160
 future: true
