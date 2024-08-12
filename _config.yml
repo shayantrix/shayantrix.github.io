@@ -75,15 +75,15 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: "Books"
+  #books:
+  # title: "Books"
   manuscripts:
     title: "Journal Articles"
   #onferences:
   #title: "Conference Papers"
 
 # Site Settings
-teaser: # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser: images/photo_2024-08-10_01-28-58 (1).jpg # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs: false # true, false (default)
 words_per_minute: 160
 future: true
