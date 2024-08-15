@@ -1,63 +1,24 @@
 baseURL: ''
-title: 'Shayan Amir Shahkarami'
+title: TailblissSite
 languageCode: en-us
 DefaultContentLanguage: en
 enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
-canonifyURLs: true
+canonifyURLs: false
 paginate: 9
 darkmode_js:
- - assets/js/darkmode.js
+  - assets/js/darkmode.js
 enableInlineShortcodes: true
 
-markup:
-  goldmark:
-    extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      linkifyProtocol: https
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer:
-        apostrophe: '&rsquo;'
-        disable: false
-        ellipsis: '&hellip;'
-        emDash: '&mdash;'
-        enDash: '&ndash;'
-        leftAngleQuote: '&laquo;'
-        leftDoubleQuote: '&ldquo;'
-        leftSingleQuote: '&lsquo;'
-        rightAngleQuote: '&raquo;'
-        rightDoubleQuote: '&rdquo;'
-        rightSingleQuote: '&rsquo;'
-    parser:
-      attribute:
-        block: false
-        title: true
-      autoHeadingID: true
-      autoHeadingIDType: github
-      wrapStandAloneImageWithinParagraph: true
-    renderer:
-      hardWraps: false
-      unsafe: true
-      xhtml: false
-
 params:
-  author: Shayan Amir Shahkarami
+  author: Nusser Studios
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png
-  moto: "My research focuses mainly on Deep learning, machine learning, computer security and privacy, Blockchain, and Distributed Systems. Recently I have been working on the automation of web scanning, WAF detection evasion, and Fuzzing.
-
-if you are interested in the topics above and want to know me better, please make yourself at home.
-
-Researcher & Developer at Fuzzer Cloud.
-Undergraduate Student at IAU Central Tehran "
-  description: ""
+  moto: "Super Fast, and Flexible"
+  description: "A Hugo theme built with love, using TailwindCSS 3, Alpine.JS, and Hugo Pipes. Images are optimized for use with Hugo Pipes for WebP format."
   disable_theme_toggle: false
-  disable_stay_uptodate: false
+  disable_stay_uptodate: true
 
   p1:
     heading: "Our mission"
@@ -66,6 +27,7 @@ Undergraduate Student at IAU Central Tehran "
       - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae."
       - text: "Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eroserat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna."
       - text: "Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra."
+        
   p2:
     heading: "Just in time for Hacktoberfest with JIT Tailwind."
     image: "images/pages/hacktoberfest.jpg"
@@ -112,81 +74,78 @@ Undergraduate Student at IAU Central Tehran "
       url: 'https://instagram.com/nusserstudios'
     twitter:
       enabled: true
-      url: 'https://twitter.com/nusserstudios'
-    
+      url: '@nusserstudios'
 
 menu:
   main:
     - identifier: prose
-      name: Research & Projects
-      url: /
+      name: Prose
+      url: /prose/
       weight: 10
     - identifier: about
-      name: Linkedin
-      url: https://linkedin.com/in/shayan-amir-shahkarami-0465301bb
+      name: About
+      url: /about/
       weight: 20
-    - identifier: CV
-      #pre: dropdown
-      name: CV
-      url: /resume.pdf
+    - identifier: categories
+      pre: dropdown
+      name: Categories
       weight: 30
-    - identifier: github
-      #pre: complexdropdown
-      name: Github
-      url: https://github.com/shayantrix
-      weight: 40
-    - identifier: email
-      name: Email
-      url: mailto:amirshahkaramishayan@gmail.com
-      weight: 50
-  # categories:
-  #   - identifier: prose
-  #     name: Prose
-  #     url: /prose/
-  #     weight: 10
-  #   - identifier: about
-  #     name: About
-  #     url: /about/
-  #     weight: 20
-  # dropdown:
-  #   - identifier: appearance
-  #     pre: stars # can be stars, comments or piechart
-  #     name: Appearance
-  #     post: "Easy customization"
-  #     url: "#"
-  #     weight: 10
-  #   - identifier: comments
-  #     pre: comments # can be stars, comments or piechart
-  #     name: Comments
-  #     post: "Check your latest comments"
-  #     url: "#"
-  #     weight: 20
-  #   - identifier: analytics
-  #     pre: piechart # can be stars, comments or piechart
-  #     name: Analytics
-  #     post: "Take a look at your statistics"
-  #     url: "#"
-  #     weight: 30
-  footer:
-    #- identifier: about
-    #  name: About
-    #  url: /about/
-    #  weight: 10
-    #- identifier: blog
-    #  name: Blog
-    #  url: /categories/blog/
-    #  weight: 20
-    #- identifier: news
-    #  name: News
-    #  url: /categories/news/
-    #  weight: 30
-    - identifier: prose
-      name: LinkedIn
-      url: https://linkedin.com/in/shayan-amir-shahkarami-0465301bb
+    - identifier: dropdown
+      pre: complexdropdown
+      name: Dropdown
       weight: 40
     - identifier: contact
       name: Contact
-      url: mailto:amirshahkaramishayan@gmail.com
+      url: /contact/
+      weight: 50
+  categories:
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
+  dropdown:
+    - identifier: appearance
+      pre: stars # can be stars, comments or piechart
+      name: Appearance
+      post: "Easy customization"
+      url: "#"
+      weight: 10
+    - identifier: comments
+      pre: comments # can be stars, comments or piechart
+      name: Comments
+      post: "Check your latest comments"
+      url: "#"
+      weight: 20
+    - identifier: analytics
+      pre: piechart # can be stars, comments or piechart
+      name: Analytics
+      post: "Take a look at your statistics"
+      url: "#"
+      weight: 30
+  footer:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: blog
+      name: Blog
+      url: /categories/blog/
+      weight: 20
+    - identifier: news
+      name: News
+      url: /categories/news/
+      weight: 30
+    - identifier: prose
+      name: Prose
+      url: /prose/
+      weight: 40
+    - identifier: contact
+      name: Contact
+      url: /contact/
       weight: 50
 
 markup:
@@ -221,7 +180,27 @@ privacy:
     disable: false
     privacyEnhanced: true
 
+server:
+  headers:
+    - for: /**
+      values:
+        Referrer-Policy: strict-origin-when-cross-origin
+
 module:
   hugoVersion:
     extended: true
     min: "0.104.0"
+  imports:
+    - path: github.com/nusserstudios/tailbliss
+      mounts:
+        - source: layouts
+          target: layouts
+        - source: i18n
+          target: i18n
+        - source: archetypes
+          target: archetypes
+        - source: assets
+          target: assets
+          #excludeFiles: images/* # uncomment for production
+        - source: content # comment for production
+          target: content # comment for production
